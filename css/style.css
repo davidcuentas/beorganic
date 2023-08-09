@@ -1,0 +1,701 @@
+/*! ------Reseteos y aplicaciones a todos los archivos ------- */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    line-height: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+/*! ------FUENTE ------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+/*! ****************************************** INDEX ********************************************** */
+
+/*! ------ HEADER ------- */
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.botonbuscar:hover {
+    color: white;
+    background-color: #91b453;
+}
+
+/*! ------ MAIN------- */
+
+/*! ------ Sección: HERO------ */
+
+.hero {
+    background-image: url(../img/greenforest.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hero div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+}
+
+.hero div h1 {
+    text-align: center;
+    font-weight: 800;
+    font-size: 26px;
+}
+
+.hero div p {
+    text-align: center;
+}
+
+.hero a {
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: #91b453;
+    padding: 8px;
+    margin-top: 15px;
+}
+
+.hero a:hover {
+    color: black;
+    background-color: #ffffff;
+    color: #91b453;
+}
+
+.hero img {
+    width: 600px;
+    height: auto;
+
+}
+
+/*! ------ Sección: INGREDIENTES------ */
+
+.ingredientes {
+    background-color: #91b453;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.ingredientes h2 {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.ingredientes div {
+    width: 50%;
+    margin: 12px;
+    text-align: left;
+}
+
+.ingredientes img {
+    width: 450px;
+    height: 450px;
+}
+
+/*! ------ Sección: COMPONENTES------ */
+
+.componentes {
+    background-color: #91b453;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.componentes h2 {
+    font-size: 24px;
+    font-weight: 800;
+    margin: 30px;
+}
+
+.componentesIconos {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    text-align: center;
+    width: 80%;
+    height: 80%;
+}
+
+.componentes div img {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+}
+
+/*! ------ Sección: NUEVOS PRODUCTOS------ */
+
+.nuevosproductos h2 {
+    margin: 50px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.owl-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.item {
+    background-color: #e9e9e9;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    object-fit: contain;
+    box-shadow: 9px -10px 6px -7px rgba(0, 0, 0, 0.17);
+    -webkit-box-shadow: 9px -10px 6px -7px rgba(0, 0, 0, 0.17);
+    -moz-box-shadow: 9px -10px 6px -7px rgba(0, 0, 0, 0.17);
+}
+
+.item:hover {
+    filter: brightness(107%);
+}
+
+.item div {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.item div a {
+    background-color: #91b453;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px;
+    margin: 10px;
+}
+
+.item div a:hover {
+    color: black;
+}
+
+.item div h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.item div p {
+    margin-bottom: 10px;
+}
+
+.item div img {
+    width: 230px;
+    height: 339px;
+    object-fit: cover;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    max-width: 800px;
+    padding: 10px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  }
+  
+  .itemm {
+    height: 100px;
+    background-color: #333;
+  }
+  
+  .item1 { grid-row: span 2; }
+  .item2 { grid-column: span 2; grid-row: span 2; }
+  .item3 { grid-row: span 3; }
+  .item4 { grid-column: span 2; }
+  .item5 { grid-row: span 2; }
+  .item6 { grid-column: span 2; }
+  .item7 { grid-row: span 3; grid-column: span 2; }
+  .item8 { grid-row: span 2; }
+  .item9 { grid-column: span 2; }
+
+
+
+/*! ------ Sección: EMPRESA ------ */
+
+.empresa {
+    background-color: #91b453;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    flex-direction: row-reverse;
+}
+
+.empresa div h2 {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.empresa div {
+    width: 50%;
+}
+
+/*! ------ FOOTER ------- */
+
+footer {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+footer div {
+    display: flex;
+    margin: 6px;
+
+}
+
+.negociosverdes {
+    height: 150px;
+}
+
+footer div div {
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    text-align-last: left;
+    font-size: 14px;
+}
+
+footer div div p {
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+.redes a {
+    margin: 10px;
+}
+
+.redes a img {
+    width: 30px;
+}
+
+.division-curva {
+    height: 1fr;
+    width: auto;
+    position: relative;
+}
+
+/*! ******************************************  PRODUCTOS ********************************************** */
+
+.productos-banner {
+    width: 100vw;
+    height: 50vh;
+    background-image: url(../img/banner2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.productos-banner h1 {
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 35pt;
+}
+
+.titulos-productos {
+    text-align: center;
+    margin: 50px;
+}
+
+
+/*! ******************************************  MOLDES ********************************************** */
+
+.titulos {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.titulos h1 {
+    color: black;
+}
+
+.titulos p {
+    width: 70%;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.moldes {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.moldes div {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.moldes div img {
+    width: 350px;
+}
+
+.margentitulos {
+    margin-top: 60px;
+}
+
+.boton2 {
+    background-color: #91b453;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px;
+    margin: 10px;
+}
+
+.boton2:hover {
+    color: black;
+}
+
+/*! ******************************************  KITS ********************************************** */
+
+.kits-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.kits {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.kits div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.kits img{
+    width: 500px;
+}
+
+.kits h2 {
+    text-align: center;
+    font-weight: 900;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.kits div a {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px;
+    margin: 10px;
+}
+
+.kits div a:hover {
+    color: darkgray;
+}
+
+.kits div img {
+    object-fit: contain;
+}
+
+
+/*! ******************************************  NOSOTROS ********************************************** */
+
+.nosotros-banner {
+    width: 100vw;
+    height: 50vh;
+    background-image: url(../img/jabones.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nosotros-banner h1 {
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.nosotros div img {
+    object-fit: cover;
+}
+
+.oficina {
+    background-color: #91b453;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 20px;
+}
+
+.oficina img {
+    width: 600px;
+    height: auto;
+}
+
+.oficina p {
+    width: 70%;
+    margin-left: 30px;
+    text-align: left;
+}
+
+.equipo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.equipo img {
+    width: 300px;
+}
+
+.equipo h2 {
+    margin: 30px;
+}
+
+.equipo div div div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.integrantesequipo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 70px;
+}
+
+.container-formulario {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h3 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color:#91b453;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #035e0d;
+  }
+
+/*! ------ MEDIA QUERIES ------- */
+
+@media screen and (max-width: 2000px) {
+    .nuevosproductos div {
+        flex-direction: row;
+    }
+
+    .carousel-corto{
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width: 1032px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero div {
+        width: 70%;
+    }
+
+    .hero h1 {
+        margin-top: 20px;
+    }
+
+    .ingredientes {
+        flex-direction: column;
+    }
+
+    .ingredientes div {
+        text-align: center;
+        width: 70%;
+        margin-bottom: 20px;
+    }
+
+    .empresa {
+        flex-direction: column;
+    }
+
+    .empresa div {
+        width: 70%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .carousel-corto{
+        display: none;
+    }
+    
+}
+
+
+
+
+@media screen and (max-width: 920px) {
+    .componentesIconos {
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+        width: 90%;
+        height: 90%;
+    }
+
+    .carousel-corto{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 689px) {
+    header {
+        position: static;
+        flex-direction: column;
+    }
+
+    header nav ul {
+        margin-right: none;
+    }
+
+    header nav {
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero img {
+        width: 400px;
+        height: auto;
+
+    }
+
+    .ingredientes img {
+        width: 350px;
+        height: 350px;
+    }
+
+    .empresa img {
+        width: 350px;
+        height: 350px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carousel-corto{
+        display: block;
+    }
+
+    .carousel-largo{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 430px) {
+    .componentesIconos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+        width: 80%;
+        height: 80%;
+    }
+
+    .hero img {
+        width: 250px;
+    }
+
+    .carousel-corto{
+        display: block;
+    }
+
+    .carousel-largo{
+        display: none;
+    }
+    
+
+}
