@@ -394,56 +394,35 @@ footer div div p {
 
 /*! ******************************************  KITS ********************************************** */
 
-.kits-container{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
 .kits {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    flex-direction: column;
-    margin-bottom: 30px;
+    justify-content: space-around;
+    margin: 20px;
+
 }
 
 .kits div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.kits img{
-    width: 500px;
-}
-
-.kits h2 {
     text-align: center;
-    font-weight: 900;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
 }
 
-
-.kits div a {
-    background-color: rgb(255, 255, 255);
-    color: black;
-    text-decoration: none;
-    font-weight: 600;
-    padding: 5px;
-    margin: 10px;
-}
-
-.kits div a:hover {
-    color: darkgray;
+.kits div div {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
 }
 
 .kits div img {
-    object-fit: contain;
+    width: 350px;
 }
 
-
+.kits div div div{
+    display: flex;
+    flex-direction: column;
+}
 /*! ******************************************  NOSOTROS ********************************************** */
 
 .nosotros-banner {
