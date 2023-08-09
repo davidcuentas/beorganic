@@ -149,7 +149,7 @@ li {
 /*! ------ Sección: NUEVOS PRODUCTOS------ */
 
 .nuevosproductos h2 {
-    margin: 50px;
+    margin: 30px;
     text-align: center;
     font-size: 24px;
     font-weight: 800;
@@ -327,7 +327,7 @@ footer div div p {
 }
 
 .productos-banner h1 {
-    color: #ffffff;
+    color: #000000;
     font-weight: 900;
     font-size: 35pt;
 }
