@@ -220,10 +220,10 @@ li {
     max-width: 800px;
     padding: 10px;
     display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: #f0f0f0;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
   }
   
   .itemm {
@@ -314,7 +314,7 @@ footer div div p {
 /*! ******************************************  PRODUCTOS ********************************************** */
 
 .productos-banner {
-    width: 100vw;
+    width: 100%;
     height: 50vh;
     background-image: url(../img/banner2.jpg);
     background-size: cover;
@@ -426,7 +426,7 @@ footer div div p {
 /*! ******************************************  NOSOTROS ********************************************** */
 
 .nosotros-banner {
-    width: 100vw;
+    width: 100%;
     height: 50vh;
     background-image: url(../img/jabones.webp);
     background-size: cover;
@@ -539,7 +539,7 @@ footer div div p {
     background-color: #035e0d;
   }
 
-/*! ------ MEDIA QUERIES ------- */
+/*! ------ MEDIA QUERYS ------- */
 
 @media screen and (max-width: 2000px) {
     .nuevosproductos div {
