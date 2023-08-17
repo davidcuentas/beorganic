@@ -168,7 +168,6 @@ li {
     display: flex;
     align-items: center;
     flex-direction: column;
-
     object-fit: contain;
     box-shadow: 9px -10px 6px -7px rgba(0, 0, 0, 0.17);
     -webkit-box-shadow: 9px -10px 6px -7px rgba(0, 0, 0, 0.17);
