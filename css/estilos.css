@@ -1,4 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+.productos-banner, .nosotros-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.hero div, .titulos, .todo-productos .owl-container .owl-carousel .item, .equipo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+
+.hero, .owl-container, .empresa, .moldes, .kits {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
 * {
   margin: 0px;
   padding: 0px;
@@ -25,14 +41,8 @@ li {
   background-image: url(../img/greenforest.jpg);
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center; }
+  background-attachment: fixed; }
   .hero div {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     width: 40%; }
     .hero div h1 {
       text-align: center;
@@ -41,12 +51,12 @@ li {
     .hero div p {
       text-align: center; }
     .hero div a {
-      color: black;
+      color: #000000;
       font-weight: 700;
-      text-decoration: none;
       background-color: #91b453;
       padding: 8px;
-      margin-top: 15px; }
+      margin-top: 15px;
+      text-align: center; }
       .hero div a:hover {
         color: black;
         background-color: #ffffff;
@@ -102,17 +112,11 @@ li {
   font-weight: 800; }
 
 .owl-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   max-width: 1300px;
   margin: 0 auto; }
 
 .empresa {
   background-color: #91b453;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   padding: 20px;
   flex-direction: row-reverse; }
   .empresa div {
@@ -121,101 +125,6 @@ li {
       font-size: 24px;
       font-weight: 800; }
 
-footer {
-  background-color: #ffffff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px; }
-  footer div {
-    display: flex;
-    margin: 6px; }
-    footer div .negociosverdes {
-      height: 150px; }
-    footer div div {
-      font-style: italic;
-      display: flex;
-      flex-direction: column;
-      margin-top: 10px;
-      text-align-last: left;
-      font-size: 14px; }
-      footer div div p {
-        text-align: left;
-        margin-bottom: 0px; }
-  footer .redes a {
-    margin: 10px; }
-    footer .redes a img {
-      width: 30px; }
-
-@media screen and (max-width: 2000px) {
-  .nuevosproductos div {
-    flex-direction: row; }
-  .carousel-corto {
-    display: none; } }
-
-@media screen and (max-width: 1032px) {
-  .hero {
-    flex-direction: column; }
-    .hero div {
-      width: 70%; }
-      .hero div h1 {
-        margin-top: 20px; }
-  .ingredientes {
-    flex-direction: column; }
-    .ingredientes div {
-      text-align: center;
-      width: 70%;
-      margin-bottom: 20px; }
-  .empresa {
-    flex-direction: column; }
-    .empresa div {
-      width: 70%;
-      text-align: center;
-      margin-top: 20px; }
-  .carousel-corto {
-    display: none; } }
-
-@media screen and (max-width: 920px) {
-  .componentesIconos {
-    grid-template-columns: repeat(3, 1fr);
-    text-align: center;
-    width: 90%;
-    height: 90%; }
-  .carousel-corto {
-    display: none; } }
-
-@media screen and (max-width: 689px) {
-  .hero img {
-    width: 400px;
-    height: auto; }
-  .ingredientes img {
-    width: 350px;
-    height: 350px; }
-  .empresa img {
-    width: 350px;
-    height: 350px; }
-  footer {
-    flex-direction: column;
-    align-items: center; }
-  .carousel-corto {
-    display: block; }
-  .carousel-largo {
-    display: none; } }
-
-@media screen and (max-width: 430px) {
-  .componentes .componentesIconos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    text-align: center;
-    width: 80%;
-    height: 80%; }
-  .hero img {
-    width: 250px; }
-  .carousel-corto {
-    display: block; }
-  .carousel-largo {
-    display: none; } }
-
 .productos-banner {
   width: 100%;
   height: 50vh;
@@ -223,9 +132,6 @@ footer {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center; }
   .productos-banner h1 {
     color: #000000;
@@ -234,9 +140,6 @@ footer {
 
 .titulos {
   text-align: center;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   justify-content: space-between; }
   .titulos .titulos-productos {
     color: #000000;
@@ -247,9 +150,6 @@ footer {
 
 .todo-productos .owl-container .owl-carousel .item {
   background-color: #e9e9e9;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   object-fit: cover;
   box-shadow: 9px -10px 6px -7px rgba(0, 0, 0, 0.17);
   -webkit-box-shadow: 9px -10px 6px -7px rgba(0, 0, 0, 0.17);
@@ -295,9 +195,6 @@ footer {
   margin-top: 60px; }
 
 .moldes {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
   margin: 20px; }
   .moldes div {
     text-align: center;
@@ -316,9 +213,6 @@ footer {
         color: black; }
 
 .kits {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
   margin: 20px; }
   .kits div {
     text-align: center;
@@ -348,10 +242,7 @@ footer {
   background-image: url(../img/jabones.webp);
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  background-attachment: fixed; }
   .nosotros-banner h1 {
     color: #000000;
     font-weight: 900;
@@ -368,28 +259,26 @@ footer {
     width: 600px;
     height: auto; }
   .oficina div p {
-    width: 70%;
-    margin-left: 30px;
-    text-align: left; }
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin-left: 30px; }
 
-.equipo {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .equipo h2 {
-    margin: 30px; }
-  .equipo .integrantesequipo {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    margin-bottom: 70px; }
-    .equipo .integrantesequipo div img {
-      width: 300px; }
-    .equipo .integrantesequipo div div {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: left; }
+.equipo h2 {
+  margin: 30px; }
+
+.equipo .integrantesequipo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 70px; }
+  .equipo .integrantesequipo div img {
+    width: 300px; }
+  .equipo .integrantesequipo div div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left; }
 
 .container-formulario {
   width: 1000px;
@@ -425,3 +314,159 @@ footer {
       cursor: pointer; }
       .container-formulario .contact-form button:hover {
         background-color: #035e0d; }
+
+footer {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px; }
+  footer div {
+    display: flex;
+    margin: 6px; }
+    footer div .negociosverdes {
+      height: 150px; }
+    footer div div {
+      font-style: italic;
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px;
+      text-align-last: left;
+      font-size: 14px; }
+      footer div div p {
+        text-align: left;
+        margin-bottom: 0px; }
+  footer .redes a {
+    margin: 10px; }
+    footer .redes a img {
+      width: 30px; }
+
+@media screen and (max-width: 2000px) {
+  .nuevosproductos div {
+    flex-direction: row; }
+  .carousel-corto {
+    display: none; } }
+
+@media screen and (max-width: 1158px) {
+  .kits div {
+    flex-direction: column; }
+    .kits div div div img {
+      width: 400px; }
+  .oficina {
+    flex-direction: column-reverse;
+    align-items: center; }
+    .oficina div {
+      display: flex;
+      align-items: center; }
+      .oficina div p {
+        text-align: center;
+        margin-left: none;
+        width: 80%; } }
+
+@media screen and (max-width: 1032px) {
+  .hero {
+    flex-direction: column; }
+    .hero div {
+      width: 70%; }
+      .hero div h1 {
+        margin-top: 20px; }
+  .ingredientes {
+    flex-direction: column; }
+    .ingredientes div {
+      text-align: center;
+      width: 70%;
+      margin-bottom: 20px; }
+  .empresa {
+    flex-direction: column; }
+    .empresa div {
+      width: 70%;
+      text-align: center;
+      margin-top: 20px; }
+  .carousel-corto {
+    display: none; }
+  .container-formulario {
+    width: 700px;
+    margin: 0 auto;
+    padding: 10px; } }
+
+@media screen and (max-width: 920px) {
+  .componentesIconos {
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    width: 90%;
+    height: 90%; }
+  .carousel-corto {
+    display: none; }
+  .equipo .integrantesequipo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 70px; }
+  .container-formulario {
+    width: 700px;
+    margin: 0 auto;
+    padding: 10px; } }
+
+@media screen and (max-width: 689px) {
+  .hero img {
+    width: 400px;
+    height: auto; }
+  .ingredientes img {
+    width: 350px;
+    height: 350px; }
+  .empresa img {
+    width: 350px;
+    height: 350px; }
+  footer {
+    flex-direction: column;
+    align-items: center; }
+  .carousel-corto {
+    display: block; }
+  .carousel-largo {
+    display: none; }
+  .container-formulario {
+    width: 500px;
+    margin: 0 auto;
+    padding: 10px; }
+  .integrantesequipo {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    margin-bottom: 70px; }
+  .oficina {
+    flex-direction: column-reverse;
+    align-items: center; }
+    .oficina img {
+      width: 450px; }
+  .equipo .integrantesequipo {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    margin-bottom: 70px; } }
+
+@media screen and (max-width: 430px) {
+  .componentes .componentesIconos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    width: 80%;
+    height: 80%; }
+  .oficina {
+    flex-direction: column-reverse;
+    align-items: center; }
+    .oficina img {
+      width: 320px; }
+  .hero img {
+    width: 250px; }
+  .carousel-corto {
+    display: block; }
+  .carousel-largo {
+    display: none; }
+  .kits div {
+    flex-direction: column; }
+    .kits div div div img {
+      width: 350px; }
+  .container-formulario {
+    width: 350px;
+    margin: 0 auto;
+    padding: 10px; } }

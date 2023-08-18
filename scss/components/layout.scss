@@ -3,14 +3,10 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    @extend %flexjustify;
 
     div {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
+        @extend %flexcolumn;
         width: 40%;
 
         h1 {
@@ -24,12 +20,13 @@
         }
 
         a {
-            color: black;
+            color: map-get($boton, texto-boton);
             font-weight: 700;
-            text-decoration: none;
-            background-color: #91b453;
+            background-color: map-get($boton, fondo-boton);
             padding: 8px;
             margin-top: 15px;
+            border-radius: map-get($boton, borde-boton);
+            text-align: center;
 
             &:hover {
                 color: black;
@@ -43,10 +40,13 @@
         width: 600px;
         height: auto;
     }
+
 }
 
+
+
 .ingredientes {
-    background-color: #91b453;
+    background-color: $color-primario;
     padding: 20px;
     display: flex;
     justify-content: space-evenly;
@@ -63,7 +63,7 @@
             font-weight: 800;
         }
 
-        p {}
+        // p {}
     }
 
     img {
@@ -73,7 +73,7 @@
 }
 
 .componentes {
-    background-color: #91b453;
+    background-color: $color-primario;
     padding: 20px;
     display: flex;
     justify-content: space-around;
@@ -113,22 +113,18 @@
 }
 
 .owl-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @extend %flexjustify;
     max-width: 1300px;
     margin: 0 auto;
 }
 
 .empresa {
-    background-color: #91b453;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    background-color: $color-primario;
+    @extend %flexjustify;
     padding: 20px;
     flex-direction: row-reverse;
 
-    img {}
+    // img {}
 
     div {
         width: 50%;
@@ -139,5 +135,3 @@
         }
     }
 }
-
-
