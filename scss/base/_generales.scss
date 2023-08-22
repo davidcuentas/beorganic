@@ -21,3 +21,21 @@ li {
     width: auto;
     position: relative;
 }
+
+.navbar {
+    .container-fluid {
+        .collapse {
+            .navbar-nav {
+                .nav-item {
+                    transition-duration: 1s;
+                    .parahover {
+                        &:hover {
+                            background-color: $color-primario;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
