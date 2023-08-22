@@ -31,9 +31,7 @@
     .oficina {
         flex-direction: column-reverse;
         align-items: center;
-
-        img {}
-
+        
         div {
             display: flex;
             align-items: center;
@@ -111,8 +109,7 @@
     }
 
     .equipo {
-        h2 {}
-
+        
         .integrantesequipo {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
