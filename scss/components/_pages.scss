@@ -33,11 +33,11 @@
 
 .todo-productos {
     .owl-container {
-        .owl-carousel {
+        .owl-theme {
             .item {
                 background-color: #e9e9e9;
                 @extend %flexcolumn;
-                object-fit: cover;
+                object-fit: contain;
                 box-shadow: 9px -10px 6px -7px rgba(0, 0, 0, 0.17);
                 -webkit-box-shadow: 9px -10px 6px -7px rgba(0, 0, 0, 0.17);
                 -moz-box-shadow: 9px -10px 6px -7px rgba(0, 0, 0, 0.17);
@@ -47,8 +47,7 @@
                 }
 
                 img {
-                    width: 230px;
-                    height: 339px;
+                    width: 100%;
                     object-fit: cover;
                 }
 
@@ -111,10 +110,7 @@
     margin: 20px;
 
     div {
-        text-align: center;
-        margin-top: 30px;
-        margin-bottom: 30px;
-
+        @include moldes (center, 30px, 30px);
         div {
             img {
                 width: 350px;

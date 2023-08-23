@@ -24,3 +24,9 @@ $boton:(
     justify-content:space-around;
     align-items:center;
 }
+
+@mixin moldes ($text-al, $margint, $marginb){
+    text-align: $text-al;
+    margin-top: $margint;
+    margin-bottom: $marginb;
+}

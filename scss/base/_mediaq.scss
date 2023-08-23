@@ -31,7 +31,7 @@
     .oficina {
         flex-direction: column-reverse;
         align-items: center;
-        
+
         div {
             display: flex;
             align-items: center;
@@ -97,11 +97,13 @@
 }
 
 @media screen and (max-width: 920px) {
-    .componentesIconos {
-        grid-template-columns: repeat(3, 1fr);
-        text-align: center;
-        width: 90%;
-        height: 90%;
+    .componentes {
+        .componentesIconos {
+            grid-template-columns: repeat(3, 1fr);
+            text-align: center;
+            width: 90%;
+            height: 90%;
+        }
     }
 
     .carousel-corto {
@@ -109,7 +111,7 @@
     }
 
     .equipo {
-        
+
         .integrantesequipo {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -181,18 +183,18 @@
         img {
             width: 450px;
         }
-        }
+    }
 
-        .equipo {
-            .integrantesequipo {
-                display: grid;
-                grid-template-columns: repeat(1, 1fr);
-                gap: 20px;
-                margin-bottom: 70px;
-            }
+    .equipo {
+        .integrantesequipo {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
+            margin-bottom: 70px;
         }
     }
-    
+}
+
 
 
 
@@ -216,7 +218,7 @@
         img {
             width: 320px;
         }
-        }
+    }
 
 
     .hero {

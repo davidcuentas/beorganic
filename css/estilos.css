@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center; }
 
-.hero div, .titulos, .todo-productos .owl-container .owl-carousel .item, .equipo {
+.hero div, .titulos, .todo-productos .owl-container .owl-theme .item, .equipo {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -36,8 +36,8 @@ li {
 .navbar .container-fluid .collapse .navbar-nav .nav-item {
   transition-duration: 1s; }
   .navbar .container-fluid .collapse .navbar-nav .nav-item .parahover:hover {
-    background-color: #91b453;
-    color: white; }
+    color: #91b453;
+    font-weight: 400; }
 
 .logo {
   width: 100px;
@@ -61,7 +61,7 @@ li {
       color: #000000;
       font-weight: 700;
       background-color: #91b453;
-      padding: 8px;
+      padding: 12px;
       margin-top: 15px;
       text-align: center; }
       .hero div a:hover {
@@ -179,35 +179,34 @@ li {
   .titulos p {
     text-align: center; }
 
-.todo-productos .owl-container .owl-carousel .item {
+.todo-productos .owl-container .owl-theme .item {
   background-color: #e9e9e9;
-  object-fit: cover;
+  object-fit: contain;
   box-shadow: 9px -10px 6px -7px rgba(0, 0, 0, 0.17);
   -webkit-box-shadow: 9px -10px 6px -7px rgba(0, 0, 0, 0.17);
   -moz-box-shadow: 9px -10px 6px -7px rgba(0, 0, 0, 0.17); }
-  .todo-productos .owl-container .owl-carousel .item:hover {
+  .todo-productos .owl-container .owl-theme .item:hover {
     filter: brightness(107%); }
-  .todo-productos .owl-container .owl-carousel .item img {
-    width: 230px;
-    height: 339px;
+  .todo-productos .owl-container .owl-theme .item img {
+    width: 100%;
     object-fit: cover; }
-  .todo-productos .owl-container .owl-carousel .item div {
+  .todo-productos .owl-container .owl-theme .item div {
     text-align: center;
     margin-bottom: 20px; }
-    .todo-productos .owl-container .owl-carousel .item div h3 {
+    .todo-productos .owl-container .owl-theme .item div h3 {
       font-size: 18px;
       font-weight: 600;
       margin-top: 20px; }
-    .todo-productos .owl-container .owl-carousel .item div p {
+    .todo-productos .owl-container .owl-theme .item div p {
       margin-bottom: 10px; }
-    .todo-productos .owl-container .owl-carousel .item div a {
+    .todo-productos .owl-container .owl-theme .item div a {
       background-color: #91b453;
       color: #ffffff;
       text-decoration: none;
       font-weight: 600;
       padding: 5px;
       margin: 10px; }
-      .todo-productos .owl-container .owl-carousel .item div a:hover {
+      .todo-productos .owl-container .owl-theme .item div a:hover {
         color: black; }
 
 .titulos h1 {
@@ -422,7 +421,7 @@ footer {
     padding: 10px; } }
 
 @media screen and (max-width: 920px) {
-  .componentesIconos {
+  .componentes .componentesIconos {
     grid-template-columns: repeat(3, 1fr);
     text-align: center;
     width: 90%;

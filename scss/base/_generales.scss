@@ -30,8 +30,8 @@ li {
                     transition-duration: 1s;
                     .parahover {
                         &:hover {
-                            background-color: $color-primario;
-                            color: white;
+                            color: $color-primario;
+                            font-weight: 400;
                         }
                     }
                 }
