@@ -66,9 +66,10 @@ li {
       color: #000000;
       font-weight: 700;
       background-color: #91b453;
-      padding: 12px;
+      padding: 10px 20px;
       margin-top: 15px;
-      text-align: center; }
+      text-align: center;
+      border-radius: 4px; }
       .hero div a:hover {
         color: black;
         background-color: #ffffff;

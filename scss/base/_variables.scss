@@ -1,31 +1,31 @@
 $color-primario: #91b453;
 $color-secundario: #035e0d;
 
-$boton:(
+$boton: (
     fondo-boton: #91b453,
     texto-boton: #000000,
 );
 
-%flex{
-    display:flex;
-    justify-content:center;
-    align-items:center;
+%flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-%flexcolumn{
-    display:flex;
-    justify-content:center;
-    flex-direction:column;
-    align-items:center;
+%flexcolumn {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
-%flexjustify{
-    display:flex;
-    justify-content:space-around;
-    align-items:center;
+%flexjustify {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-@mixin moldes ($text-al, $margint, $marginb){
+@mixin moldes ($text-al, $margint, $marginb) {
     text-align: $text-al;
     margin-top: $margint;
     margin-bottom: $marginb;

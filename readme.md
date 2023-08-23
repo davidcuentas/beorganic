@@ -1,5 +1,5 @@
 <h1 align="center">Proyecto Be Organic</h1>
-<h3 align="center">Realziado por: David Cuentas - Web Designer from Colombia</h3>
+<h3 align="center">Realizado por: David Cuentas - Web Designer from Colombia</h3>
 
 - 📫 How to reach me **davidcuentas@gmail.com**
 

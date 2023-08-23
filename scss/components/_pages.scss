@@ -112,6 +112,7 @@
 
     div {
         @include moldes (center, 30px, 30px);
+
         div {
             img {
                 width: 350px;
@@ -211,7 +212,8 @@
 }
 
 .equipo {
-    @extend %flexcolumn;;
+    @extend %flexcolumn;
+    ;
 
     h2 {
         margin: 30px;
@@ -233,7 +235,7 @@
                 flex-direction: column;
                 align-items: center;
                 text-align: left;
-                
+
                 p {
                     margin-bottom: 0rem !important;
                 }

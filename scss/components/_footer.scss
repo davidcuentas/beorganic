@@ -1,36 +1,41 @@
-footer{
+footer {
     background-color: #ffffff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    div{
+
+    div {
         display: flex;
         margin: 6px;
-        .negociosverdes{
+
+        .negociosverdes {
             height: 150px;
         }
-        div{
+
+        div {
             font-style: italic;
             display: flex;
             flex-direction: column;
             margin-top: 10px;
             text-align-last: left;
             font-size: 14px;
-            p{
+
+            p {
                 text-align: left;
                 margin-bottom: 0px;
             }
         }
     }
-    .redes{
-        a{
+
+    .redes {
+        a {
             margin: 10px;
-            img{
+
+            img {
                 width: 30px;
             }
 
         }
     }
 }
-

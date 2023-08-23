@@ -24,10 +24,10 @@
             color: map-get($boton, texto-boton);
             font-weight: 700;
             background-color: map-get($boton, fondo-boton);
-            padding: 12px;
+            padding: 10px 20px;
             margin-top: 15px;
-            border-radius: map-get($boton, borde-boton);
             text-align: center;
+            border-radius: 4px;
 
             &:hover {
                 color: black;
@@ -88,7 +88,7 @@
 
         &:hover {
             transform: scale(1.1);
-            
+
         }
     }
 }
@@ -120,7 +120,8 @@
                 height: 60px;
                 margin: 2px;
             }
-            p{
+
+            p {
                 margin: 4px;
             }
         }
@@ -155,9 +156,9 @@
 
         &:hover {
             transform: scale(1.1);
-            
+
+        }
     }
-}
 
     div {
         width: 50%;
