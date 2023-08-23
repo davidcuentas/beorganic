@@ -33,6 +33,11 @@ li {
   width: auto;
   position: relative; }
 
+.division-curva2 {
+  height: 1fr;
+  width: auto;
+  margin-top: 30px; }
+
 .navbar .container-fluid .collapse .navbar-nav .nav-item {
   transition-duration: 1s; }
   .navbar .container-fluid .collapse .navbar-nav .nav-item .parahover:hover {
@@ -175,9 +180,10 @@ li {
   .titulos .titulos-productos {
     color: #000000;
     font-weight: 900;
-    font-size: 35pt; }
-  .titulos p {
-    text-align: center; }
+    font-size: 27pt; }
+  .titulos h2 {
+    text-align: center;
+    font-size: 25px; }
 
 .todo-productos .owl-container .owl-theme .item {
   background-color: #e9e9e9;
@@ -310,6 +316,8 @@ li {
     flex-direction: column;
     align-items: center;
     text-align: left; }
+    .equipo .integrantesequipo div div p {
+      margin-bottom: 0rem !important; }
 
 .container-formulario {
   width: 1000px;
