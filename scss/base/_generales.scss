@@ -28,6 +28,14 @@ li {
     margin-top: 30px;
 }
 
+.division-curva3 {
+    height: 1fr;
+    width: auto;
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+}
+
 .navbar {
     .container-fluid {
         .collapse {

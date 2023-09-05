@@ -38,6 +38,13 @@ li {
   width: auto;
   margin-top: 30px; }
 
+.division-curva3 {
+  height: 1fr;
+  width: auto;
+  position: absolute;
+  z-index: 3;
+  bottom: 0; }
+
 .navbar .container-fluid .collapse .navbar-nav .nav-item {
   transition-duration: 1s; }
   .navbar .container-fluid .collapse .navbar-nav .nav-item .parahover:hover {
@@ -53,7 +60,8 @@ li {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
   .hero div {
     width: 40%; }
     .hero div h1 {
@@ -353,7 +361,7 @@ li {
       border-radius: 4px;
       cursor: pointer; }
       .container-formulario .contact-form button:hover {
-        background-color: #035e0d; }
+        color: #000000; }
 
 footer {
   background-color: #ffffff;
